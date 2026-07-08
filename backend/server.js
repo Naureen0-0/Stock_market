@@ -41,6 +41,12 @@ app.use(
 );
 app.use(express.json());
 
+//ADD THIS HEALTH CHECK ROUTE
+app.get("/api/health", (req, res) => {
+  res.status(200).json({ status: "OK", message: "Server is running" });
+});
+
+
 app.use("/api/auth", authRoutes);
 
 app.get("/", (req, res) => {
