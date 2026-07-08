@@ -1,7 +1,7 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const { UserModel } = require("../model/UserModel");
-const { getJwtSecret } = require("../middleware/authMiddleware");
+const { UserModel } = require("../model/UserModel.js");
+const { getJwtSecret } = require("../middleware/authMiddleware.js");
 
 function generateToken(userId) {
   return jwt.sign({ id: userId }, getJwtSecret(), { expiresIn: "7d" });
