@@ -1,6 +1,6 @@
 import { API_BASE_URL } from "./config";
 
-const AUTH_API_BASE_URL = `${API_BASE_URL}/api/auth`;
+const AUTH_API_BASE_URL = `${API_BASE_URL}/auth`;
 
 async function handleResponse(response) {
   const data = await response.json().catch(() => ({}));
