@@ -217,25 +217,8 @@ erDiagram
 - 💼 **Holdings Collection:** Stores stock holdings data shown in the dashboard.
 - 📊 **Positions Collection:** Stores active/previous trading position data.
 
-## 🖼️ Screenshots
-
-### Home Page
-![Home Page](./screenshots/home.png)
-
-### Login Page
-![Login Page](./screenshots/login.png)
-
-### Dashboard
-![Dashboard](./screenshots/dashboard.png)
-
-### Holdings Page
-![Holdings Page](./screenshots/holdings.png)
-
-### Buy Order Window
-![Buy Order Window](./screenshots/buy-order.png)
-
-### About Page
-![About Page](./screenshots/about.png)
+## 🖼️ Screen Recording
+https://github.com/user-attachments/assets/46b035eb-6a2e-4158-8bc1-df15de99f7b4
 
 ## 🧰 Tech Stack
 
