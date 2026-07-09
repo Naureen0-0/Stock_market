@@ -3,7 +3,7 @@
 A full-stack stock trading platform clone with a responsive landing site, secure authentication, and a protected dashboard for holdings, positions, and order placement.
 
 ## 🚀 Live Demo
-   👈
+ https://stockmarket-swart-two.vercel.app/  👈
 
 ## 💡 Motivation
 
