@@ -90,7 +90,7 @@ app.post("/api/visitors", async (req, res) => {
   }
 });
 
-app.get("/allHoldings", requireAuth, async (req, res) => {
+app.get("/api/allHoldings", requireAuth, async (req, res) => {
   try {
     const allHoldings = await HoldingsModel.find({});
     res.status(200).json(allHoldings);
@@ -100,7 +100,7 @@ app.get("/allHoldings", requireAuth, async (req, res) => {
   }
 });
 
-app.get("/allPositions", requireAuth, async (req, res) => {
+app.get("/api/allPositions", requireAuth, async (req, res) => {
   try {
     const allPositions = await PositionsModel.find({});
     res.status(200).json(allPositions);
@@ -142,7 +142,7 @@ function validateOrderPayload(payload) {
   };
 }
 
-app.post("/newOrder", requireAuth, async (req, res) => {
+app.post("/api/newOrder", requireAuth, async (req, res) => {
   try {
     const validationResult = validateOrderPayload(req.body);
 
@@ -171,7 +171,7 @@ app.post("/newOrder", requireAuth, async (req, res) => {
 // ========== NEW: GET ORDERS ROUTES ==========
 
 // Get orders for the logged-in user
-app.get("/allOrders", requireAuth, async (req, res) => {
+app.get("/api/allOrders", requireAuth, async (req, res) => {
   try {
     const orders = await OrdersModel.find({ userId: req.user.id }).sort({ 
       createdAt: -1 
