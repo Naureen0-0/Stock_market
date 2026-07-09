@@ -40,7 +40,7 @@ app.use(
   })
 );
 
-app.options('*', cors());
+
 app.use(express.json());
 
 //ADD THIS HEALTH CHECK ROUTE
